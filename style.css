@@ -10,6 +10,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
 /* .wrapper {
@@ -25,15 +27,21 @@ body {
     "footer";
 } */
 
+/* Styles for the header */
 header {
-    width: 300px;
-    height: 300px;
-    margin:left;
-    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-bottom: 20px;*/
+    flex-direction: column;
+}
+
+/* Styles for the avatar */
+.avatar {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background-color: orange;
-    text-align: center;
-    text-decoration: none;
+    margin-right: 20px;
 }
 
 main{
@@ -73,20 +81,68 @@ header > ul > li {
     
 }
 
+/* Additional styles for the content container */
+.content-container {
+    background-color: #e8bebe;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
 
+/* Styles for the links inside the content-container */
+.content-container .link ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
 
-.link {
+.content-container .link ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.content-container .link ul li a {
+    color: #310cc6; 
     text-decoration: none;
-    display: flex;
-    padding: 30px;
+    transition: opacity color 0.5s ease; 
+    font-size: 18px;
 }
 
-.link ul li  {
-    list-style-type: none;
-    padding: 5px;
+.content-container .link ul li a:hover {
+    opacity: 0; 
+}
+
+.content-container .link ul li a:not(:hover) {
+    opacity: 1; 
 }
 
 
+/* Styles for the about section */
+.about-section {
+    background-color: #f9f9f9; 
+    padding: 30px; 
+    border-radius: 10px; 
+    margin-top: 20px; 
+    transition: background-color 0.3s;
+}
+
+.about-section:hover {
+    background-color: #081e8b; 
+    
+}
+
+.about-section h2 {
+    font-size: 28px; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.about-section p {
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #666; 
+    margin-bottom: 15px; 
+}
 
 /* footer */
 
@@ -106,6 +162,11 @@ header > ul > li {
     border-radius: 50%;
 }
 
+/* Added hover effect */
+.foot a:hover {
+    background-color: #333; 
+    color: white; 
+}
 
 footer > div > li {
     list-style: none;  
@@ -202,7 +263,7 @@ button {
     justify-content: center;
     align-items: center;
     margin: 20px 0px;
-    flex-wrap: ;
+    flex-wrap: wrap;
 }
 
 .blog-box {
@@ -261,3 +322,4 @@ button {
     color: rgb(255, 0, 0);
     transition: all ease 0.3s;
 }
+
