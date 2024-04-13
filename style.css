@@ -57,8 +57,7 @@ h1 > project.html {
     background-color: rgb(48, 46, 46);
     padding: 0;
     margin: 0;
-    overflow: hidden;
- 
+    overflow: hidden; 
 }
 .navbar a {
     color: white;
@@ -73,6 +72,7 @@ h1 > project.html {
 .navbar li {
     float: right;
 }
+
 
 header > ul > li {
     list-style: none;
@@ -127,7 +127,7 @@ header > ul > li {
 }
 
 .about-section:hover {
-    background-color: #081e8b; 
+    background-color: #797676; 
     
 }
 
@@ -144,23 +144,61 @@ header > ul > li {
     margin-bottom: 15px; 
 }
 
-/* footer */
+.name {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+}
 
-.foot {
+/* Additional styles for the projects */
+.projects {
     display: flex;
-    justify-content: space-between;
-    flex: wrap;
-    background-color: orange;
-    padding: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
-.foot a {
-    text-decoration: none;
-    background-color: rgb(10, 8, 5);
-    margin: 30px;
-    border: 30px solid rgb(0, 0, 0);
-    border-radius: 50%;
+.project {
+    flex: 0 1 calc(24% - 20px); 
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Added color transition */
+    margin-bottom: 20px;
 }
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem; 
+    color: #c5a60d; 
+    margin-top: 20px; 
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #e5e5e5; 
+}
+
 
 /* Added hover effect */
 .foot a:hover {
@@ -171,7 +209,6 @@ header > ul > li {
 footer > div > li {
     list-style: none;  
 }
-
 
 .copy {
     text-align: center;
@@ -190,136 +227,191 @@ footer > div > li {
 
 }
 
-/* contact */
-
-main h1 {
+/* Styles for the contact Form*/
+h1 {
     text-align: center;
-    padding: 10px;
-    margin: 10px;
-    color: aliceblue;
-    font-size: 60px;
+    margin-bottom: 20px;
 }
 
-input {
-    background-color: aliceblue;
-    width: 70%;
-    padding: 16px 16px;
+.message {
+    background-color: #fff;
+    padding: 20px;
     border-radius: 10px;
-    border-color: orange;
-    margin-bottom: 20px;
-  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 24px); /* Reduce the width and account for padding and border */
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px; 
 }
 
 textarea {
-    background-color: white;
-    width: 70%;
-    margin-left: 20px;
-    font-size: 20px;
-    padding: 16px 16px;
-    border-color: orange;
-    margin-bottom: 25px;
-    align-items: center;
-   
+    height: 100px; /* Reduce the height of the textarea */
 }
 
-button {
-    background-color: aliceblue;
-    border-radius: 20px;
-    border-color: orange;
-    padding: 20px;
-    font-size: 10px 18px;
-    position: fixed;
-    margin: 10px;
-
-
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 16px; /* Reduce padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px; /* Reduce font size */
 }
 
-.blog {
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Styles for the container of individual blog posts */
+.blog-posts {
     display: flex;
-    justify-content: center;
-    padding: 40px;
-    flex-direction: column;
-    color: aliceblue;
-    font-size: 60px;
-    border-bottom: 2px solid orange;
-
-}
-
-.blog-head {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    align-items: center;
-    flex-direction: column;
-}
-
-.blog-head h2 {
-    font-size: 3rem;
-    font-weight: 600;
-}
-  
-.blog-post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.blog-box {
-    width: 350px;
-    background-color: #020101;
-    border: 1px solid #ececec;
-    margin: 20px;
+/* Styles for individual blog posts */
+.blog-post {
+    flex: 0 1 calc(24% - 20px); 
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Added color transition */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
-.blog-img {
-    width: 100%;
-    height: auto;
+.blog-post img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.blog-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
 
+.blog-post p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.blog-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-head > div {
+    font-family: Arial, sans-serif; /* Font for "My Recent Post" */
+    font-size: 2.2rem; 
+    color: #c5a60d; 
+}
+
+.blog-head h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif; /* Font for "My Blog" */
+    font-size: 1.2rem; 
+    margin-bottom: 10px;
+    color: #5d4bb9; 
 }
 
 .blog-text {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+    text-align: left; 
 }
 
 .blog-text span {
-    color: rgb(143, 4, 4);
-    font-size: 0.9rem;
+    font-size: 0.8rem; 
+    color: #666; 
+    margin-bottom: 10px; 
+    display: block; 
 }
 
 .blog-text .blog-title {
-    font-size: 1.5rem;
-    font: 600;
-    color: rgb(143, 4, 4);
-
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+    text-decoration: none;
+    transition: color 0.3s; 
+    display: block; 
 }
 
 .blog-text .blog-title:hover {
-    color: rgb(255, 0, 0);
-    transition: all ease 0.3s;
+    color: #0088cc; /* Adjust color on hover */
 }
 
 .blog-text p {
-    font-size: 0.9rem;
-    color: rgb(143, 4, 4);
+    font-size: 1rem; 
+    color: #666; 
+    margin-bottom: 15px; 
 }
 
 .blog-text a {
-    font-size: 1.2rem;
-    color: rgb(143, 4, 4);
+    color: #0088cc; 
+    text-decoration: none;
+    transition: color 0.3s; 
 }
 
 .blog-text a:hover {
-    color: rgb(255, 0, 0);
-    transition: all ease 0.3s;
+    color: #005580; /* Adjust link color on hover */
 }
 
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #e5e5e5; 
+}
+
+/* footer */
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+    background-color: orange;
+    padding: 50px;
+}
+
+.foot a {
+    text-decoration: none;
+    background-color: rgb(10, 8, 5);
+    margin: 30px;
+    border: 30px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+/* Media queries for smaller devices */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .foot {
+        padding: 10px;
+    }
+
+    .foot a {
+        margin: 5px;
+        border: 5px solid rgb(0, 0, 0);
+    }
+}
