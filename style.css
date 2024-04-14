@@ -14,25 +14,13 @@ body {
     background-color: #f2f2f2;
 }
 
-/* .wrapper {
-    width: 100%;
-    max-width: auto;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 1rem 2rem;
-    grid-template-areas: 
-    "header"
-    "sidebar"
-    "content"
-    "footer";
-} */
 
-/* Styles for the header */
+
+/* Styles for the header component */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*margin-bottom: 20px;*/
     flex-direction: column;
 }
 
@@ -52,6 +40,7 @@ h1 > project.html {
     font-size: 300px;
 }
 
+/* styles for nav component */
 .navbar ul {
     list-style: none;
     background-color: rgb(48, 46, 46);
@@ -151,7 +140,36 @@ header > ul > li {
     margin-top: 10px;
 }
 
-/* Additional styles for the projects */
+
+/* Styles for skills Component */
+.skills h2 {
+    font-size: 2rem; 
+    color: #333; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.skills {
+    background-color: #fcfafa; 
+    padding: 20px; 
+    margin-top: 20px; 
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.skills-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skills-img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #d6cfcf; 
+
+}
+ 
+
+/* Additional styles for the projects componet */
 .projects {
     display: flex;
     justify-content: space-around;
@@ -160,7 +178,7 @@ header > ul > li {
 }
 
 .project {
-    flex: 0 1 calc(24% - 20px); 
+    flex: 0 1 calc(50% - 10px); 
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -227,7 +245,7 @@ footer > div > li {
 
 }
 
-/* Styles for the contact Form*/
+/* Styles for the contact Form component*/
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -274,7 +292,7 @@ button[type="submit"]:hover {
 }
 
 
-/* Styles for the container of individual blog posts */
+/* Styles for the container of individual blog component */
 .blog-posts {
     display: flex;
     justify-content: space-between;
@@ -283,7 +301,7 @@ button[type="submit"]:hover {
 
 /* Styles for individual blog posts */
 .blog-post {
-    flex: 0 1 calc(24% - 20px); 
+    flex: 0 10 calc(50% - 20px); 
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -294,9 +312,10 @@ button[type="submit"]:hover {
 }
 
 .blog-post img {
-    max-width: 100%;
+    max-width: 50%;
     border-radius: 10px;
     margin-bottom: 20px;
+    overflow: auto;
 }
 
 .blog-post h3 {
@@ -383,7 +402,7 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
     flex: wrap;
-    background-color: orange;
+    background-color: rgb(39, 38, 37);
     padding: 50px;
 }
 
@@ -395,8 +414,9 @@ button[type="submit"]:hover {
     border-radius: 50%;
 }
 
+
 /* Media queries for smaller devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .container {
         padding: 10px;
     }
@@ -413,5 +433,69 @@ button[type="submit"]:hover {
     .foot a {
         margin: 5px;
         border: 5px solid rgb(0, 0, 0);
+    }
+
+
+    .blog-post img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        overflow: auto;
+    }
+    .project-post img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        overflow: auto;
+    }
+    
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+  
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+    .skills {
+        display: block;
+        padding: 10px;
+    }
+
+    .foot {
+        padding: 10px;
+    }
+
+    .foot a {
+        margin: 5px;
+        border: 5px solid rgb(0, 0, 0);
+    }
+
+    .blog-post {
+        flex: 0 100%;
+        padding: 10px;
+    }
+    .blog-post img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        overflow: auto;
+    }
+    .project-post img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        overflow: auto;
+    }
+    
+    .project {
+        flex: 0 100%;
+        padding: 10px;
     }
 }
