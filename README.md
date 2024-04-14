@@ -11,11 +11,11 @@ Through this website, I aim to present a  overview of my capabilities in a minim
 ## Functionality / features / Components
 ### Semantics
 Utilized HTML5 semantic elements such as <nav>, <main>, <div>, <span>, and <footer>  in maintaining simplicity and readability in code structure which reflects design.
-<nav>: Designates navigation links for a webpage, ideal for menus and table of contents.
-<main>: Represents the primary content of the document, excluding repetitive elements like headers and footers.
-<div>: Serves as a versatile container for grouping elements and applying styles or scripts.
-<span>: Functions similarly to <div>, but as an inline container, suitable for applying styles or scripts to specific text or inline elements.
-<footer>: Defines a footer for its nearest sectioning content, commonly containing details like authorship, copyright information, or related document links.
+nav: Designates navigation links for a webpage, ideal for menus and table of contents.
+main: Represents the primary content of the document, excluding repetitive elements like headers and footers.
+div: Serves as a versatile container for grouping elements and applying styles or scripts.
+span: Functions similarly to <div>, but as an inline container, suitable for applying styles or scripts to specific text or inline elements.
+footer: Defines a footer for its nearest sectioning content, commonly containing details like authorship, copyright information, or related document links.
 By incorporating these semantic elements, i've enhance code comprehension for developers and also improves accessibility the website
 
 ### Reused Component/Feature
