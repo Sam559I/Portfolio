@@ -299,7 +299,7 @@ button[type="submit"]:hover {
     flex-wrap: wrap;
 }
 
-/* Styles for individual blog posts */
+/* Styles for individual blog posts Component */
 .blog-post {
     flex: 0 10 calc(50% - 20px); 
     background-color: #f9f9f9;
@@ -396,7 +396,7 @@ button[type="submit"]:hover {
     background-color: #e5e5e5; 
 }
 
-/* footer */
+/* footer Component*/
 
 .foot {
     display: flex;
