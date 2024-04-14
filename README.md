@@ -9,10 +9,45 @@ Open [GitHub](https://github.com/Sam559I/Portfolio)
 Through this website, I aim to present a  overview of my capabilities in a visually engaging and professional manner. It will feature sections such as an About Me page, Portfolio highlighting my work, Resume/CV section, blog and contact page.
 
 ## Functionality / features / Components
+### Semantics
+Used throughout html nav, main, div and foooter semantics to keep simple and easy to read.
+
 ### Reused Component/Feature
+-  Responsive Nav bar this is linked to all pages of the portfolio, used flexbox for simple design and layout
+![nav bar](docs/nav.png)
+- Resonsive Footer also linked throughout all pages of the portfolio. Links to social media outlets such as X(Twitter), Facebook, Instagram and youtube.
+![nav bar](docs/footer.png)
+- Background image main used throughout the portfolio pages
 
+### Home page
+- graphical component avatar, icons for skills
+- About text component simple description section with hover animations
+- Links componet to social networks with mock resume (pdf attached)
+- Skills section add graphics componet of skills, used flex to position added responsive hover
 
-- 
+![hero](docs/hero.main.png)
+
+### Projects tab
+- 4 graphical components
+- Flexbox used for positioning
+- hover feature included with tranistion time
+- Link to project 1 to github repository for portfolio
+
+![](docs/Projects.main.png)
+
+### Blog tab
+- 4 blog posts 
+- Flexbox used for positioning
+- Read more link 
+- Text component each blog post dated, with small description
+- Hover feature included with tranistion time
+![blog](docs/main.blog.png)
+
+### Contact tab
+- Contact form 
+- responsive features added 
+![](docs/Contact.png)
+
 ## Site map
 ![sitemap](docs/Sitemap.jpg)
 Very simple design for website site map with easy features.
@@ -46,7 +81,11 @@ open [figma](https://www.figma.com/file/UGwWoGLfsIBdnsMtpguGNc/Untitled?type=whi
 ![Ipad design](docs/ipad-design.png)
 ![phone design](docs/mobile-design.png)
 
-Final version slightly modified from original design for better functionality and overall better finished product.
+Final version slightly modified from original design for better functionality and overall better finished product. 
+
+Through a series of modifications and adjustments, the emphasis has been placed on simplicity as a guiding principle. This deliberate choice ensures that the end product not only fulfills its intended objectives but also resonates more closely with my personal preferences and aesthetic sensibilities. 
+
+By streamlining the design and eliminating unnecessary complexities, we have achieved a harmonious balance between form and function, resulting in a more intuitive and user-friendly solution.
 
 ## Screnshots
 ### Desktop

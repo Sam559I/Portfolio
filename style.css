@@ -109,7 +109,7 @@ header > ul > li {
 }
 
 
-/* Styles for the about section */
+/* Styles for the about text component */
 .about-section {
     background-color: #f9f9f9; 
     padding: 30px; 
@@ -144,7 +144,7 @@ header > ul > li {
 }
 
 
-/* Styles for skills Component */
+/* Styles for skills graphical Component */
 .skills h2 {
     font-size: 2rem; 
     color: #333; 
@@ -188,6 +188,7 @@ header > ul > li {
     text-align: center;
     transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Added color transition */
     margin-bottom: 20px;
+    
 }
 
 .project img {
