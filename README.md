@@ -4,13 +4,19 @@
 Open [GitHub](https://github.com/Sam559I/Portfolio)
 - 
 ## Purpose
- The portfolio website serves as a platform to exhibit my skills and attributes to both my peers and potential employers, while also functioning as a promotional tool to showcase the skills utilized in its creation to prospective clients. 
+The portfolio website serves as a platform to exhibit my skills and attributes to both my peers and potential employers, while also functioning as a promotional tool to showcase the skills utilized in its creation to prospective clients. 
 
-Through this website, I aim to present a  overview of my capabilities in a visually engaging and professional manner. It will feature sections such as an About Me page, Portfolio highlighting my work, Resume/CV section, blog and contact page.
+Through this website, I aim to present a  overview of my capabilities in a minimalist visually engaging and professional manner. It will feature sections such as an About Me page, Portfolio highlighting my work, Resume/CV section, blog and contact page.
 
 ## Functionality / features / Components
 ### Semantics
-Used throughout html nav, main, div and foooter semantics to keep simple and easy to read.
+Utilized HTML5 semantic elements such as <nav>, <main>, <div>, <span>, and <footer>  in maintaining simplicity and readability in code structure which reflects design.
+<nav>: Designates navigation links for a webpage, ideal for menus and table of contents.
+<main>: Represents the primary content of the document, excluding repetitive elements like headers and footers.
+<div>: Serves as a versatile container for grouping elements and applying styles or scripts.
+<span>: Functions similarly to <div>, but as an inline container, suitable for applying styles or scripts to specific text or inline elements.
+<footer>: Defines a footer for its nearest sectioning content, commonly containing details like authorship, copyright information, or related document links.
+By incorporating these semantic elements, i've enhance code comprehension for developers and also improves accessibility the website
 
 ### Reused Component/Feature
 -  Responsive Nav bar this is linked to all pages of the portfolio, used flexbox for simple design and layout
@@ -33,10 +39,10 @@ Used throughout html nav, main, div and foooter semantics to keep simple and eas
 - hover feature included with tranistion time
 - Link to project 1 to github repository for portfolio
 
-![](docs/Projects.main.png)
+![project](docs/Projects.main.png)
 
 ### Blog tab
-- 4 blog posts 
+- 5 blog posts 
 - Flexbox used for positioning
 - Read more link 
 - Text component each blog post dated, with small description
@@ -83,9 +89,9 @@ open [figma](https://www.figma.com/file/UGwWoGLfsIBdnsMtpguGNc/Untitled?type=whi
 
 Final version slightly modified from original design for better functionality and overall better finished product. 
 
-Through a series of modifications and adjustments, the emphasis has been placed on simplicity as a guiding principle. This deliberate choice ensures that the end product not only fulfills its intended objectives but also resonates more closely with my personal preferences and aesthetic sensibilities. 
+Through a series of modifications and adjustments, the emphasis has been placed on simplicity as a guiding principle. This deliberate choice ensures that the end product not only fulfills its intended objectives but also resonates more closely with my personal preferences and aesthetic sensibilities.
 
-By streamlining the design and eliminating unnecessary complexities, we have achieved a harmonious balance between form and function, resulting in a more intuitive and user-friendly solution.
+By streamlining the design and eliminating unnecessary complexities, i have achieved a harmonious balance between form and function, resulting in a more intuitive and user-friendly solution.
 
 ## Screnshots
 ### Desktop
