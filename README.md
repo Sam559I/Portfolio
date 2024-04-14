@@ -8,7 +8,10 @@ Open [GitHub](https://github.com/Sam559I/Portfolio)
 
 Through this website, I aim to present a  overview of my capabilities in a visually engaging and professional manner. It will feature sections such as an About Me page, Portfolio highlighting my work, Resume/CV section, blog and contact page.
 
-## Functionality / features
+## Functionality / features / Components
+### Reused Component/Feature
+
+
 - 
 ## Site map
 ![sitemap](docs/Sitemap.jpg)
